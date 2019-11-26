@@ -11,7 +11,6 @@ const tictactoe = (id) => {
       document.getElementById(id).innerHTML = 'X'
       let newArr = arr.filter(a => !array.includes(a))
       let other = newArr[parseInt(Math.round(Math.random() * (newArr.length -1)))]
-      console.log(newArr, other)
       if (other) {
         array.push(other)
         document.getElementById(other).disabled = true
