@@ -38,8 +38,8 @@ div {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
-  min-width: 100vw;
-  min-height: 100vh;
+  min-width: 1000vw;
+  min-height: 1000vh;
   background: #314659;
   opacity: 0.5;
 }
