@@ -9,8 +9,9 @@ const tictactoe = (id) => {
   if (array.length < 9) {
       array.push(id)
       document.getElementById(id).innerHTML = 'X'
-      let other = arr.filter(a => !array.includes(a))[parseInt(Math.round(Math.random() * arr.filter(a => !array.includes(a)).length))]
-      console.log(other)
+      let newArr = arr.filter(a => !array.includes(a))
+      let other = newArr[parseInt(Math.round(Math.random() * (newArr.length -1)))]
+      console.log(newArr, other)
       if (other) {
         array.push(other)
         document.getElementById(other).disabled = true
