@@ -1,0 +1,297 @@
+$theme: brown;
+$themeBackground: white;
+
+.header {
+  font-size: 50px;
+  font-weight: 800;
+  font-family: "Permanent Marker", cursive;
+  color: $theme;
+}
+.outer {
+  margin: 20px auto;
+  width: 600px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  background: $theme;
+  .grid-box {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 10px;
+    color: $theme;
+
+    button {
+      background: $themeBackground;
+      outline: none;
+      border: none;
+      box-shadow: none;
+      color: $theme;
+      font-size: 40px;
+      font-family: "Permanent Marker", cursive;
+    }
+  }
+}
+.my-flex {
+  display: flex;
+  justify-content: space-around;
+  width: 600px;
+  margin: auto;
+  color: $theme;
+}
+.watermark {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  font-family: "Pacifico", cursive;
+  color: $theme;
+}
+.selective {
+  font-family: "Permanent Marker", cursive;
+  outline: none;
+  box-shadow: none;
+  background: transparent;
+  height: 40px;
+  width: 180px;
+  padding: 0 18px;
+  color: $theme;
+  font-size: 20px;
+  border: 1px solid $theme;
+  border-radius: 20px;
+
+  option {
+    background: $theme;
+    color: $themeBackground;
+  }
+}
+.refresh {
+  font-family: "Permanent Marker", cursive;
+  outline: none;
+  box-shadow: none;
+  background: transparent;
+  width: 180px;
+  color: $theme;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 1px solid $theme;
+}
+#none {
+  background: $theme;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+#noneText {
+  color: $themeBackground;
+  font-family: "Permanent Marker", cursive;
+  position: fixed;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: 600;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: scale(3);
+}
+@media only screen and (max-width: 600px) {
+  .header {
+    font-size: 30px;
+  }
+  .outer {
+    width: 60vw;
+    height: 60vw;
+    .grid-box {
+      grid-template-columns: 20vw 20vw 20vw;
+      grid-template-rows: 20vw 20vw 20vw;
+      grid-gap: 3px;
+      button {
+        font-size: 20px;
+      }
+    }
+  }
+  .my-flex {
+    width: 60vw;
+  }
+  .selective {
+    height: 20px;
+    width: 80px;
+    font-size: 10px;
+    padding: 0 2px;
+  }
+  .refresh {
+    height: 20px;
+    width: 80px;
+    font-size: 10px;
+  }
+  #noneText {
+    font-size: 10px;
+  }
+}
+.easy {
+  $theme: black;
+  $themeBackground: lightblue;
+
+  ::selection {
+    color: $themeBackground;
+    background: $theme;
+  }
+
+  text-align: center;
+  background: $themeBackground;
+  width: 100vw;
+  height: 100vh;
+  .header {
+    color: $theme;
+  }
+  .outer {
+    background: $theme;
+    .grid-box {
+      color: $theme;
+
+      button {
+        background: $themeBackground;
+        color: $theme;
+      }
+    }
+  }
+  .my-flex {
+    color: $theme;
+  }
+  .watermark {
+    color: $theme;
+  }
+  .selective {
+    border: 1px solid $theme;
+    color: $theme;
+
+    option {
+      background: $theme;
+      color: $themeBackground;
+    }
+  }
+  .refresh {
+    border: 1px solid $theme;
+    color: $theme;
+  }
+  #none {
+    background: $theme;
+  }
+  #noneText {
+    color: $themeBackground;
+  }
+}
+
+.hard {
+  $theme: white;
+  $themeBackground: purple;
+
+  ::selection {
+    color: $themeBackground;
+    background: $theme;
+  }
+
+  text-align: center;
+  background: $themeBackground;
+  width: 100vw;
+  height: 100vh;
+  .header {
+    color: $theme;
+  }
+  .outer {
+    background: $theme;
+    .grid-box {
+      color: $theme;
+
+      button {
+        background: $themeBackground;
+        color: $theme;
+      }
+    }
+  }
+  .my-flex {
+    color: $theme;
+  }
+  .watermark {
+    color: $theme;
+  }
+  .selective {
+    border: 1px solid $theme;
+    color: $theme;
+
+    option {
+      background: $theme;
+      color: $themeBackground;
+    }
+  }
+  .refresh {
+    border: 1px solid $theme;
+    color: $theme;
+  }
+  #none {
+    background: $theme;
+  }
+  #noneText {
+    color: $themeBackground;
+  }
+}
+
+.impossible {
+  $theme: silver;
+  $themeBackground: black;
+
+  ::selection {
+    color: $themeBackground;
+    background: $theme;
+  }
+
+  text-align: center;
+  background: $themeBackground;
+  width: 100vw;
+  height: 100vh;
+  .header {
+    color: $theme;
+  }
+  .outer {
+    background: $theme;
+    .grid-box {
+      color: $theme;
+
+      button {
+        background: $themeBackground;
+        color: $theme;
+      }
+    }
+  }
+  .my-flex {
+    color: $theme;
+  }
+  .watermark {
+    color: $theme;
+  }
+  .selective {
+    border: 1px solid $theme;
+    color: $theme;
+
+    option {
+      background: $theme;
+      color: $themeBackground;
+    }
+  }
+  .refresh {
+    border: 1px solid $theme;
+    color: $theme;
+  }
+  #none {
+    background: $theme;
+  }
+  #noneText {
+    color: $themeBackground;
+  }
+}
+.two {
+  text-align: center;
+}
