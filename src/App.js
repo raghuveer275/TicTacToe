@@ -319,6 +319,7 @@ export class App extends Component {
   }
   handleSelect = (event) => {
     this.setState({ selected: event.target.value })
+    this.reset()
   }
   state = {
     selected: 'easy',
