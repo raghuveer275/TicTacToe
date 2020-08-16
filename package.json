@@ -2,7 +2,7 @@
   "name": "tic-tac-toe",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://raghuveer275.github.io/Tic-Tac-Toe",
+  "homepage": "https://raghuveer275.github.io/TicTacToe",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "node-sass": "^4.13.0",
