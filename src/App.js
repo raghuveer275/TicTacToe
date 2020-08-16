@@ -361,6 +361,7 @@ export class App extends Component {
         </div>
         <span id='none' style={{ display: 'none' }} onClick={this.reset} />
         <span id='noneText' style={{ display: 'none' }} onClick={this.reset} />
+        <i className='watermark'>Raghuveer Bharadwaj</i>
       </div>
     )
   }
